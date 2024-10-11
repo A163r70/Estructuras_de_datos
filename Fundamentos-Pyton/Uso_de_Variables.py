@@ -49,7 +49,7 @@ altura = 1.65       # variable de tipo Float
 edad = "diecinueve"           # variable de tipo Int
 semestre = 3        #variables de tipo int
 
-print()                     #el prints solo ya trae el salto de línea incluído
+print()                     #El print, solo, ya trae el salto de línea incluído.
 print("Nombre: ", nombre)
 print("Altura: ", altura, " cm")
 print("Edad: ", edad, " años")

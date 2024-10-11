@@ -4,6 +4,7 @@ from operator import truediv
 """9 de Octubre del 2024"""
 """Descripción: Ejercicio sobre los tipos de datos que existen en Python"""
 
+#Declaramos variables y le asignamos sus valores correspondientes.
 Dia_semana_1 = "lunes"
 Dia_semana_2 = "martes"
 Pasaje_1 = 20
@@ -15,7 +16,7 @@ Gatos_2 = 4.5
 Presupuesto_1 = True
 Presupuesto_2 = False
 
-
+#En la siguiente parte solo imprimimos los datos en la forma correcta.
 print("*** Gastos dirarios ***")
 print("Día: ", Dia_semana_1)
 print("Pasaje: ", Pasaje_1)
