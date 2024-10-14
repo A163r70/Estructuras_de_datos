@@ -44,3 +44,4 @@ Se utiliza una convención de colocar las variables en mayúsculas y no modifica
 '''
 VARIABLE_CONSTANTE = 3.1416
 print("Ejemplo de convención de una constante:", VARIABLE_CONSTANTE)
+
