@@ -22,13 +22,14 @@ print(f"El resultado de {numero1_cadena} y {numero2_cadena} es: {resultado_caden
 nose_float = float(input("Ingresa un número: "))#Funciones anidadas
 
 # Comentar por qué se realiza el casting de variables.
-numero1_float = float(numero1_cadena)
+numero1_float = float(numero1_cadena)#El número ingresado por el usuario lo convertimos a decimal y lo almacenamos en otra variable.
 numero2_float = float(numero2_cadena)
+# Realizamos la operación deseada, y en este caso se puede realizar correctamente ya que ahora los número ya son decimales y no cadenas.
 resultado_float = numero1_float + numero2_float # Verificar qué es lo que realiza de esta manera y compáralo.
 print()
 print(" ****  Casting de varibles  ****")
+# Al imprimir, se imprimirá la suma de los números y no los concatenará.
 print(f"El resultado de {numero1_float} y {numero2_float} es: {resultado_float}")
-
 #lower = convertir toda la cadena a minúsculas
 
 '''
