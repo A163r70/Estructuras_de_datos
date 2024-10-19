@@ -8,14 +8,18 @@ Entrada de datos por consola para interacturar con el usuario con valores dinám
 # Comentar sobre la función input.
 # input la utilizamos para leer una entrada de texto desde la consola o terminal. Cuando la llamamos el programa se espera
 # para que el usuario escriba algo, luego, el texto introducido la almacenamos en una variable y se devuelve como una cadena.
-numero1_cadena = input("Introduce un número decimal: ")
+# Pedimos dos números al usuario por consola y las almacenamos en diferentes variables.
+numero1_cadena = input("Introduce un número decimal: ") # Lo que introduzca el usuario se guradará como una cadena.
 numero2_cadena = input("Introduce otro número decimal: ")
+# La siguiente instrucción trata de sumar los número que el usuario ingreso, sin embargo como están guradadas como cadenas,
+# no se puede realizar correctamente la operación.
 resultado_cadena = numero1_cadena + numero2_cadena # Verificar qué es lo que realiza esta instrucción (ver el print).
 print()
 print(" ****  Recibir número sin un casting de varibles  ****")
+# Al imprimir el resultado de la operación solo nos mostrará las cadenas concatenadas.
 print(f"El resultado de {numero1_cadena} y {numero2_cadena} es: {resultado_cadena}")
 
-nose_float = float(input("Ingrsa un número: "))#Funciones anidadas
+nose_float = float(input("Ingresa un número: "))#Funciones anidadas
 
 # Comentar por qué se realiza el casting de variables.
 numero1_float = float(numero1_cadena)
