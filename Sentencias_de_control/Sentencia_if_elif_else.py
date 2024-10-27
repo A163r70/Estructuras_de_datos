@@ -1,11 +1,29 @@
 '''
 Nombre: Jesús Alberto Ramírez Salinas
 Fecha: 23 de Octubre de 2024
-Descripción: Operador lógico if elsif else
-
+Descripción: Operador lógico if elsif else.
 '''
-# elif evalua una segunda condición.
+
 #Depuramos
+
+"""
+La sentencia elif es una extensión del if-else y permite evaluar múltiples condiciones de forma secuencial. 
+Es como tener varias opciones a elegir, ejecutándose el bloque de código correspondiente a la primera condición 
+que sea verdadera.
+
+Sintaxis:
+
+if condicion_1:
+    # Código a ejecutar si la condición_1 es verdadera.
+
+elif condición_2:
+    # Código a ejecutar si la condición_2 es verdadera.
+  .
+  .
+  .
+else:
+    # Código que se ejecuta si todas las condiciones fueron falsas.
+"""
 
 print("Programa para determinar el grupo de edad del usuario")
 
@@ -18,5 +36,16 @@ elif grupo_edad >=26 and grupo_edad <= 45:
     print(f"Perteneces al grupo de adultos jóvenes.")
 elif grupo_edad >= 46 and grupo_edad <= 60:
     print(f"Perteneces al grupo de adultos maduros.")
-elif grupo_edad >60:
+else:
     print(f"Perteneces al grupo de adultos mayores.")
+
+###############################################
+"""
+MODO DEPURACIÓN (DEBUG)
+
+Utilizar ahora el modo depuración.
+1) Crear un punto de ruptura en la variable edad. Marcar el número de línea y se pondrá un círculo color rojo.
+2) Clic derecho y ejecutar el modo Debug.
+3) Observar la nueva pantalla e ir ejecutando paso-a-paso (step over) F8.
+4) Observar el comportamiento.
+"""
