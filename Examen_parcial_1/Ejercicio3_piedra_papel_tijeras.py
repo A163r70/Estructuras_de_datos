@@ -84,7 +84,6 @@ el número que generó el randint la cual es la opción del CPU.
 Dependiendo de la opción que eliga el ususario a una
 variable declarada previamente le asignamos si es "piedra", "papel" o "tijeras", hacemos lo mismo para la opción que
 genere el randint para la CPU.
-
 Empezamos haciendo las comparaciones para ver quien gana o si quedan empatados, tomando en cuenta todas las 
 convinaciones posibles, y a la misma vez aumentamos los contadores que las veces que gana el usuario o la CPU, victoiras
 y empates que se irán mostrando confome vaya avanzando el juego.
