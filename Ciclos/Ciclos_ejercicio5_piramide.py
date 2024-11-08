@@ -20,13 +20,18 @@ for k in range(1, filas+1):
     final -= 1
 print("+++++++++++++++++++++++")
 
-
-for k in range(0, filas):
-    asterisco = "*" * filas
+limite = filas
+for k in range(0, limite):
+    asterisco = "*" * limite
     espacio = " " * k
     print(f"{espacio}{asterisco}", end=" ")
-    filas -= 1
+    limite -= 1
     print()
 
 
 print("+++++++++++++++++++++++")
+
+for k in range(0, filas):
+    asteriscos = "*" * (2 * k + 1)
+    espacios = " " * (filas - k - 1)
+    print(f"{espacios}{asteriscos}")
