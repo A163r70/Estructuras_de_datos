@@ -15,27 +15,63 @@ def menu():
     print("6.- Eliminar video")
     print("0.- Salir")
     opcion = int(input("Elige una opción: "))
+    print()
+    return opcion
 
 def ver_lista(videos_de_youtube):
     for lista in videos_de_youtube:
         print(lista, end=" ")
+    print()
 
 def ordenAZ(videos_de_youtube):
     videos_de_youtube.sort()
+    print()
     return videos_de_youtube
 
 def ordenZA(videos_de_youtube):
     videos_de_youtube.sort(reverse=True)
+    print()
     return videos_de_youtube
 
 def agregar(videos_de_youtube):
-    videos_de_youtube.insert()
+    video_agregar = input("Ingresa el video a agregar: ")
+    videos_de_youtube.append(video_agregar)
+    print()
     return videos_de_youtube
 
 def agregar_varios(videos_de_youtube):
+    videos_agregar = int(input("Ingresa cuantos videos deseas agregar: "))
+    for videos in range(videos_agregar):
+        video = input("Ingresa el video: ")
+        videos_de_youtube.append(video)
+    print()
+    return videos_de_youtube
 
-    contador = 0
-    while contador != videos:
-        if videos_de_youtube[contador] == " ":
+def eliminar(videos_de_youtube):
+    eliminar = int(input("Ingresa el índice del video que desea eliminar: "))
+    if
+    print()
 
-
+final = 1
+while final != 0:
+    opcion = menu()
+    if opcion == 1:
+        ver_lista(videos_de_youtube)
+    elif opcion == 2:
+        for lista in ordenAZ(videos_de_youtube):
+            print(lista, end=" ")
+        print()
+    elif opcion == 3:
+        for lista in ordenZA(videos_de_youtube):
+            print(lista, end=" ")
+        print()
+    elif opcion == 4:
+        agregar(videos_de_youtube)
+    elif opcion == 5:
+        agregar_varios(videos_de_youtube)
+    elif opcion == 6:
+        eliminar(videos_de_youtube)
+    elif opcion == 0:
+        final = 0
+    else:
+        print("Valor no válido.")
