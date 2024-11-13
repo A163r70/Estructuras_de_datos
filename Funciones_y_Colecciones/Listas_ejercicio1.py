@@ -39,20 +39,22 @@ def agregar(videos_de_youtube):
     print()
     return videos_de_youtube
 
-def agregar_varios(videos_de_youtube):
+def agregar_varios(videos_de_youtube, contador_videos):
     videos_agregar = int(input("Ingresa cuantos videos deseas agregar: "))
     for videos in range(videos_agregar):
         video = input("Ingresa el video: ")
         videos_de_youtube.append(video)
+        contador_videos += 1
     print()
     return videos_de_youtube
 
-def eliminar(videos_de_youtube):
+def eliminar(videos_de_youtube, contador_videos):
     eliminar = int(input("Ingresa el índice del video que desea eliminar: "))
-    if
-    print()
+    videos_de_youtube.pop(eliminar-1)
+    contador_videos -=1
 
 final = 1
+contador_videos = 0
 while final != 0:
     opcion = menu()
     if opcion == 1:
@@ -67,10 +69,11 @@ while final != 0:
         print()
     elif opcion == 4:
         agregar(videos_de_youtube)
+        contador_videos +=1
     elif opcion == 5:
-        agregar_varios(videos_de_youtube)
+        agregar_varios(videos_de_youtube, contador_videos)
     elif opcion == 6:
-        eliminar(videos_de_youtube)
+        eliminar(videos_de_youtube, contador_videos)
     elif opcion == 0:
         final = 0
     else:
