@@ -11,7 +11,6 @@ contabilidad = [ ]
 electronicaII = [ ]
 derecho_legislacion = [ ]
 ingles = [ ]
-materias = esrtuctura_datos+algebra+contabilidad+electronicaII+derecho_legislacion+ingles
 
 def menu():
     print("1.- Ver calificaciones de alumno")
@@ -33,6 +32,8 @@ def ver_calificaciones(materias):
 def nuevo_alumno(alumnos):
     alumno = input("Ingresa al nuevo alumno: ")
     alumnos.append(alumno)
+    calificacion_ed = int(input("Ingresa la calificación de la materia de Estrcutura de Datos: "))
+
 
 contador = 1
 contador_alumno = 0
