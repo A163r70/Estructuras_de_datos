@@ -16,12 +16,18 @@ def menu():
     print()
     return opcion
 
-def ver_lista(nombre, cantidad):
+def ver_lista(nombre, cantidad, contador_productos):
+    contador_productos = 1
+    print("Productos")
     for lista in nombre:
-        print(lista, end=" ")
+        print(f"{contador_productos}) {lista}", end=" ")
+        contador_productos += 1
     print()
+    contador_productos = 1
+    print("Cantidad de productos")
     for lista2 in cantidad:
-        print(lista2, end=" ")
+        print(f"{contador_productos}) {lista2}", end=" ")
+        contador_productos += 1
     print()
 
 def agregar(nombre, cantidad):
@@ -43,7 +49,7 @@ contador_productos = 0
 while contador != 0:
     opciones = menu()
     if opciones == 1:
-        ver_lista(nombre, cantidad)
+        ver_lista(nombre, cantidad, contador_productos)
     elif opciones == 2:
         agregar(nombre, cantidad)
         contador_productos +=1
