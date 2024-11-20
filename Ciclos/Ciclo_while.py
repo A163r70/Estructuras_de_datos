@@ -26,7 +26,7 @@ while contador < numero:
     contador+= 1
 
 print("Fin de la cuenta.")
-print(f"Los número del 1 al {numero} son: {contador}")
+print(f"Los números del 1 al {numero} son: {contador}")
 
 """
 En el programa pedimos un número que será el final de los número que vamos a mostrar.

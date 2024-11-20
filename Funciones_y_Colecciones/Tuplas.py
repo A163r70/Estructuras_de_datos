@@ -10,7 +10,7 @@ Las tuplas son:
 - Inmutables
 - Los elementos se encierran entre paréntesis
 """
-#Ejemplo de tupla
+
 print("Ejemplo de tupla")
 fechas_cumple = ('12-19', '12-27', '01-10', '10-18', '11-01', '09-30', '08-25', '01-06', '10-21', '04-11', '03-06')
 
@@ -21,7 +21,8 @@ for fecha in fechas_cumple:
 print(
     print("Serie de pi de Lebniz")
 )
-#Serie de pi de Lebniz
+
+print("Serie de Leibniz")
 
 pi_serie = (4, -4/3, 4/5, -4/7, 4/9, -4/11, 4/13, -4/15, 4/17, -4/19, 4/21, -4/23)
 for pi in pi_serie:

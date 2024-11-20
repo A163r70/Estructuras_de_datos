@@ -15,7 +15,8 @@ def menu():
     opcion = int(input("Elige una opción: "))
     print()
     return opcion
-
+#prodtuco = (nombre, cantidad)
+#lista_prpductos.append(producto)
 def ver_lista(nombre, cantidad, contador_productos):
     contador_productos = 1
     print("Productos")
