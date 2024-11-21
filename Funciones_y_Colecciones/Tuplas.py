@@ -5,10 +5,13 @@ Descripción: Tuplas.
 '''
 
 """
-Las tuplas son:
-- Ordenadas
-- Inmutables
-- Los elementos se encierran entre paréntesis
+Las tuplas sonuna colección ordenada e inmutable de elementos. 
+Esto significa que:
+- Ordenada: Los elementos se almacenan en un orden específico, y cada elemento tiene un índice asociado.
+- Inmutable: Una vez creada, no se puede agregar, eliminar o cambiar elementos dentro de una tupla.
+- Heterogénea: Una tupla puede contener elementos de diferentes tipos de datos.
+- Los elementos se encierran entre paréntesis () y se separan por comas.
+Aunque también el uso de los paréntesis es opcional.
 """
 
 print("Ejemplo de tupla")
@@ -28,12 +31,13 @@ pi_serie = (4, -4/3, 4/5, -4/7, 4/9, -4/11, 4/13, -4/15, 4/17, -4/19, 4/21, -4/2
 for pi in pi_serie:
     print(pi)
 #Valor considerando tres elementos
-print(f"{(sum(pi_serie[0: 1])):.4f}")
-print(sum(pi_serie[0: 2]))
-print(sum(pi_serie[0: 4]))
-print(sum(pi_serie[0: 7]))
-print(sum(pi_serie[0: 9]))
-print(sum(pi_serie[0: 12]))
+#La fubción sum() suma los elementos del parámetro que recibe.
+print(f"El número Pi considerando los primeros 3 elementos es: {(sum(pi_serie[0: 2])):.4f}")
+print(f"El número Pi considerando los primeros 5 elementos es: {(sum(pi_serie[0: 4])):.4f}")
+print(f"El número Pi considerando los primeros 7 elementos es: {(sum(pi_serie[0: 6])):.4f}")
+print(f"El número Pi considerando los primeros 9 elementos es: {(sum(pi_serie[0: 8])):.4f}")
+print(f"El número Pi considerando todos los elementos es: {(sum(pi_serie)):.4f}")
+
 
 print()
 print("Ejemplos con coordenadas")
