@@ -6,6 +6,7 @@ Descripción:
 
 filas = int(input("Ingrese cuantas filas tendrá la piramide: "))
 final = filas
+print("Forma 1")
 for k in range(1, filas+1):
     for l in range(1, k+1):
         print("*", end=" ")
@@ -13,6 +14,8 @@ for k in range(1, filas+1):
 
 print("+++++++++++++++++++++++")
 
+print()
+print("Forma 2")
 for k in range(1, filas+1):
     for l in range(final):
         print("*", end=" ")
@@ -20,6 +23,8 @@ for k in range(1, filas+1):
     final -= 1
 print("+++++++++++++++++++++++")
 
+print()
+print("Forma 3")
 limite = filas
 for k in range(0, limite):
     asterisco = "*" * limite
@@ -31,6 +36,17 @@ for k in range(0, limite):
 
 print("+++++++++++++++++++++++")
 
+print()
+print("Forma 4")
+for k in range(0, filas):
+    asteriscos = "*" * (2 * k + 1)
+    espacios = " " * (filas - k - 1)
+    print(f"{espacios}{asteriscos}")
+
+print("+++++++++++++++++++++++")
+
+print()
+print("Forma 5")
 for k in range(0, filas):
     asteriscos = "*" * (2 * k + 1)
     espacios = " " * (filas - k - 1)

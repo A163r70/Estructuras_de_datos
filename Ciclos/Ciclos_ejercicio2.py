@@ -14,3 +14,9 @@ while numero1 < numero2:
     suma += numero1
 
 print(f"La suma del número {numero1} hasta el número {numero2} es: {suma}")
+"""
+Este programa es parecido al anterior, con la diferencia de que en este solicitamos aparte del número en el que 
+terminará la suma acumulativa, también pedimos desde que número quiere iniciar, así, empezamos a aumentar
+solo la variable que guarda desde donde quiere iniciar, y el programa termina cuando el número de inicio sea igual al
+número final.
+"""
