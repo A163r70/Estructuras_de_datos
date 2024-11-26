@@ -42,3 +42,10 @@ while contador != 0:
         contador = 0
     else:
         print("Valor no válido.")
+
+"""
+En este programa realizamos una calculadora utilizando funciones, una función que nos muestra el menú donde el
+usuario eligirá una una de las opciones, después le pedimos dos número con los que realizaremos la operación
+que eligió previamente. Dependiendo de la opción que eliga el usuario se realizarán las operaciones con los números 
+ingresados, y se retornará el resultado para imprimirlo en el código a nivel módulo. 
+"""

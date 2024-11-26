@@ -83,3 +83,10 @@ while contador != 0:
         contador = 0
     else:
         print("Valor no válido")
+
+"""
+En este programa calculamos la pendiente entre dos coordenadas y la ecuación de la recta a partir de coordenadas
+proporcionadas por el usuario. Para poder llevar a cabo esto necesitamos que el usuario nos proporciones dos
+pares de coordenadas, una vez que lo haya echo podemos hacer los cálculos adecuados. También si el usuario nos
+proporciona más de dos pares de coordenadas podemos elegir entre cuales calcular la pendiente y la ecuación de la recta.
+"""

@@ -64,3 +64,9 @@ while contador != 0:
         contador = 0
     else:
         print("Valor no válido")
+
+"""
+En este programa determinamos el número más grande y el número más pequeño de una lista de números que el usuario nos
+proporciona, para devolver en una tupla los números máximo y mínimo. Si la lista no tiene nada, retornamos una tupla 
+vacía, pero si contiene algo, devolvemos los números mayor y menor, el cual almacenamos en una tupla que mostramos.
+"""

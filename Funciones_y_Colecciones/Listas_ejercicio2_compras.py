@@ -60,3 +60,11 @@ while contador != 0:
         contador = 0
     else:
         print("Valor no válido.")
+"""
+Este programa tiene parecido al anterior sobre las playlist, una primer función muestra el menú donde el usuario 
+escogerá una opción, la segunda función permite visualizar las compras que ingreso el usuario así como las
+cantidades correspondientes a esos productos. L a siguiente función agrega los productos en una lista a modo de que 
+siempre este acompañado el producto y la cantidad de ésta. En la función eliminar se muestra primero la lista
+de los productos con sus índices para que el usuario escoga el producto que desea eliminar, eliminando así ese
+producto y su cantidad.
+"""

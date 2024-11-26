@@ -102,3 +102,15 @@ while final != 0:
         final = 0
     else:
         print("Valor no válido.")
+
+"""
+La función ver_lista muestra un mensaje de que no hay videos si es que aún no se han ingresado datos, si ya ha ingresado 
+datos esta función los muestra. La función ordenAZ muestra un mensaje de que no hay videos si es que aún no se han
+ingresado datos, si ya ha ingresado datos, ésta función los ordena en orden alfabético. La función ordenZA ordena los 
+datos en orden contrario al alfabético si ya cuenta con datos, si aún no tiene datos se muestra un mensaje de que no 
+hay videos. La función agregar pide el video que se desea agregar guardándolo en una variable la cual se le asignará a 
+la lista principal. La función agregar_varios pide la cantidad de videos que desea agregar para después iterar en un 
+for sobre esa cantidad e ir pidiendo los nombres de los videos y guardándolos en la lista principal. La función 
+eliminar muestra al usuario la lista de videos con sus índices correspondientes donde tendrá que escoger un video a 
+eliminar, eliminando así el video en esa posición.
+"""
