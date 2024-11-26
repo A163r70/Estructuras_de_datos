@@ -1,7 +1,7 @@
 '''
 Nombre: Jesús Alberto Ramírez Salinas
 Fecha: 23 de noviembre de 2024
-Descripción: .
+Descripción: Ejercicios sobre tuplas con funciones.
 '''
 
 equipos = [ ]
@@ -80,3 +80,9 @@ while contador != 0:
         contador = 0
     else:
         print("Valor no válido.")
+
+"""
+En este programa elaboramos un rol de juegos de partidos de Fút-bol a partir de la cantidad de equipos que el usuario
+ingresa, los cuales tienen que ser como mínimo dos. Con los equipos ingresados se realiza el rol, manteniendo un 
+pibote, el cual es el primer equipos, en conclusión todos los equipos tienen que jugar contra todos sin que se repitan.
+"""

@@ -1,7 +1,7 @@
 '''
 Nombre: Jesús Alberto Ramírez Salinas
 Fecha: 29 de Octubre de 2024
-Descripción:
+Descripción: Ejercicios con for.
 '''
 
 filas = int(input("Ingrese cuantas filas tendrá la piramide: "))
@@ -43,11 +43,7 @@ for k in range(0, filas):
     espacios = " " * (filas - k - 1)
     print(f"{espacios}{asteriscos}")
 
-print("+++++++++++++++++++++++")
-
-print()
-print("Forma 5")
-for k in range(0, filas):
-    asteriscos = "*" * (2 * k + 1)
-    espacios = " " * (filas - k - 1)
-    print(f"{espacios}{asteriscos}")
+"""
+En este programa se ralizó el uso del for para imprimir una serie de asteríscos en distintas formas. Solo le pedimos al
+usuario el número de filas que tendrán las pirámides.
+"""

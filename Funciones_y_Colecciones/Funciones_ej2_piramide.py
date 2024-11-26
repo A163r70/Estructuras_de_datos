@@ -1,7 +1,7 @@
 '''
 Nombre: Jesús Alberto Ramírez Salinas
 Fecha: 21 de noviembre de 2024
-Descripción: Ejercicio uno de una calculadora con funciones.
+Descripción: Ejrcicio sobre las pirámides, pero con funciones.
 '''
 
 def priamide1(filas):
@@ -59,3 +59,10 @@ piramide2(filas)
 piramide3(filas)
 piramide4(filas)
 piramide5(filas)
+
+"""
+En este programa se realizaron los mismos ejercios sobre las pirámides, pero en este caso utilizando funciones.
+En este casó también se le pide al usuario el número de filas que tendrán las pirámides, lo cual se le envía
+a las funciones para que trabajen con esas filas, imprimiendo en cada función el resultado de como se ve 
+la pirámide.
+"""

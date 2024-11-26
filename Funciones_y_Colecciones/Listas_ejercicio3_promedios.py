@@ -122,3 +122,13 @@ while contador != 0:
         contador = 0
     else:
         print("Valor no válido.")
+
+"""
+En este programa solicitamos el nombre de un usuario así como las calificaciones de las 6 materias del primer parcial,
+una vez obtenido esos datos se puede calcular el promedio de los usuarios ingresados y mostralos, calcular el 
+promedio grupal y mostrarlos, mostrar las calificaciones detalladas de un alumno en específico y eliminar a un
+alumno de los ya ingresados. Aquí yo utilice la función zip, la cual utilicé para iterar sobre dos listas y poder
+mostrarlas consecutivamente una después de la otra, esto al mostrar las materias con las calificaciones. También 
+agrege todas las calificaciones en una sola lista y los nombres de los alumnos en otra lista. Reviso en las 
+funciones de si hay datos, si no contiene datos la lista muestro un mensaje que dice que no hay alumnos.
+"""
