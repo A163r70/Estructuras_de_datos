@@ -56,7 +56,7 @@ print("********************************************")
 print()
 #Imprimir todos en un for
 for nombre in conjunto_nombres:
-    print(f"Hola {nombre}", end=" ")
+    print(f"Hola {nombre}")
 print("********************************************")
 print()
 #Verificar si un elemento existente pertenece a un conjunto
