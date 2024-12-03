@@ -71,5 +71,18 @@ while contador != 0:
         print("Valor no válido.")
 
 """
-
+En este programa hacemos una rifa de una computadora, eligiendo a uno de los participantes como ganador.
+Primero declaramos un conjunto vacío donde guardaremos los correos de los participantes.
+En una primer función mostramos un menú, donde el usuario podra elegir que hacer guardando su opción en una variable
+la cual retornamos. En una segunda función mostramos los correos de los participantes solo si el conjunto contiene
+algo. La tercer función nos permite ingresar correos de participantes nuevos. La cuarta función nos permite eliminar 
+el correo de algun participante, solo si el conjunto contiene algo, primero mostramos los correos que contiene
+el conjunto, de esos correos el usuario podrá escoger cual eliminar, escribiendo al correo a eliminar, comprobamos
+si el correo ingresado existe dentro del conjunto, si aparece se eliminará, si no, no lo hará mostrando un mensaje.
+La última función es lo principal del código pues en esta escogemos al ganador de la rifa, primero comproobamos si
+existen correos en el conjuntos, si existen, convertimos a lista el conjunto para después guradarla en una lista, 
+de esta lista con la función 'random.choice()' elige a un solo elemento de la lista el cual es el ganador, el
+cual es asignado a una varibale llamada 'ganador', finalmente solo mostramos al ganador.
+En el código a nivel módulo solo programamos el while donde mandamos a llamar al menú guardando lo que retorna
+en una variable que sera la opción que eliga el usuario.
 """
