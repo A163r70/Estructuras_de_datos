@@ -30,6 +30,8 @@ def juego(palabras, tema_juego):
 tema_juego = menu()
 juego(palabras, tema_juego)
 
+
+
 """
 Este programa permite ingresar varias palabras sbre un tema y termina cuando ingresan palabras que ya habían ingresado
 previamente.
