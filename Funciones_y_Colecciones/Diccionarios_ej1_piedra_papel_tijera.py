@@ -56,6 +56,6 @@ def juego(eleccion_jugador, eleccion_cpu, piedra_papel_tijeras, victorias, victo
 
     return victorias, victorias_cpu, empates
 
-menu(victorias, empates, victorias_cpu)
-jugador(menu(victorias, empates, victorias_cpu))
+opcion = menu(victorias, empates, victorias_cpu)
+jugador(opcion)
 juego(jugador(menu(victorias, empates, victorias_cpu)), piedra_papel_tijeras, victorias, victorias_cpu, empates)
