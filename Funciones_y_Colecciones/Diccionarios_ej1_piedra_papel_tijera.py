@@ -53,7 +53,7 @@ def juego(eleccion_jugador, eleccion_cpu, piedra_papel_tijeras, victorias, victo
     else:
         print(f"Jugador: {eleccion_jugador}. CPU: {eleccion_cpu}. El resultado es: EMPATE")
         empates += 1
-
+    print()
     return victorias, victorias_cpu, empates
 
 opcion = menu(victorias, empates, victorias_cpu)
