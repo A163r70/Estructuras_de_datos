@@ -1,7 +1,7 @@
 '''
 Nombre: Jesús Alberto Ramírez Salinas
 Fecha: 06 de diciembre de 2024
-Descripción: Segundo ejercicio del examen del segundo parcial.
+Descripción: Tercer ejercicio del examen del segundo parcial.
 '''
 
 def menu():
@@ -14,18 +14,21 @@ def menu():
     return opcion
 
 def lenguaje_basico(texto):
+#Creamos un diccionario donde almacenamos las vocales y sus conversiones en el lenguaje hacker.
      lenguaje = {'a': "4", 'e': "3", 'i': "1", 'o': "0", 'u': "(_)",
                  'A': "4", 'B': "3", 'I': "1", 'O': "0", 'U': "(_)"}
-     texto_traducido = ""
-     for letra in texto:
-         if letra in lenguaje:
+     texto_traducido = ""#Creamos una cadena vacía donde guradaremos el texto traducido.
+     for letra in texto:#Iteramos sobre el texto del usuario.
+         if letra in lenguaje:#Si una letra del texto esta en el diccionario guradamos su valor en la cadena creada previamente.
              texto_traducido += lenguaje[letra]
-         else:
+         else:#Si la letra no se encuentra en el diccionario solo guardamos la letra tal y como aparece en el texto.
             texto_traducido += letra
      print(f"El texto traducido es el siguiente: ")
-     print(texto_traducido)
+     print(texto_traducido)#Imprimimos el texto traducido.
      print()
 
+#Ocupamos la misma lógica que en el caso anterior. Solo que en este caso almacenamos el abecedario completo, en
+#mayúsculas y  minúsculas.
 def lenguaje_medio(texto2):
     lenguaje = {'a':"4",'b':"13",'c':"[",'d':")",'e':"3",'f':"|=",'g':"&",'h':"#",'i':"1",'j':",_|",'k':"|<",'l':"|_",
                 'm':"/V\ ",'n':"|\|",'o':"0",'p':"|*",'q':"(_,)",'r':"|2",'s':"5",'t':"7",'u':"(_)",'v':"\/",'w':"\/\/",
@@ -39,16 +42,16 @@ def lenguaje_medio(texto2):
         else:
             texto_traducido += letras
     print(f"El texto traducido es el siguiente: ")
-    print(texto_traducido)
+    print(texto_traducido)#Imprimimos el texto ya traducido.
     print()
 
 contador = 1
 while contador != 0:
     opcion = menu()
-    if opcion == 1:
+    if opcion == 1:#Traducción a lenguaje hacker básico
         texto = input("Ingresa el texto que desea traducir al lenguaje básico: ")
         lenguaje_basico(texto)
-    elif opcion == 2:
+    elif opcion == 2:#Traducción a lenguaje hacker intermedio.
         texto2 = input("Ingresa el texto que desea traducir al lenguaje intermedio: ")
         lenguaje_medio(texto2)
     elif opcion == 0:
