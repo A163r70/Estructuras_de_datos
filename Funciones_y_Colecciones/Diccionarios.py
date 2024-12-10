@@ -6,7 +6,7 @@ Descripción: Ejemplos sobre colecciones.
 
 """
 Un diccionario es ordenado, pero la forma de ingresar es diferente.
-En vez de un ídnice, nosotros lo nombramos como queramos de la siguiente forma:
+En vez de un índice, nosotros lo nombramos como queramos de la siguiente forma:
 par_clave_valor
 
 """
@@ -70,10 +70,10 @@ print(diccionario_informatica)
 for grupo in enumerate(diccionario_informatica):
     print(f"Grupo: {grupo}")
 #acceder a los elementos de un diccionario de diccionarios
-promedio_303 = diccionario_informatica['grupo_303']['prmedio_grupal']
-promedio_503 = diccionario_informatica['grupo_303']['prmedio_grupal']
-promedio_703 = diccionario_informatica['grupo_303']['prmedio_grupal']
-promedio_903 = diccionario_informatica['grupo_303']['prmedio_grupal']
+promedio_303 = diccionario_informatica['grupo_303']['promedio_grupal']
+promedio_503 = diccionario_informatica['grupo_303']['promedio_grupal']
+promedio_703 = diccionario_informatica['grupo_303']['promedio_grupal']
+promedio_903 = diccionario_informatica['grupo_303']['promedio_grupal']
 print(promedio_303)
 print(promedio_503)
 print(promedio_703)
