@@ -60,9 +60,9 @@ while opcion != 0:
     opcion3 = int(input(f"Elija una de las dos opciones que eligió: 1.-{opcion1_jugador} ó 2.-{opcion2_jugador}: "))
 
     if opcion3 == 1:
-        opcionf_jugador = opcion1_jugador
+        opcionf_jugador = opcion1
     else:
-        opcionf_jugador = opcion2_jugador
+        opcionf_jugador = opcion2
 
     print(opcionf_jugador)
 
@@ -90,7 +90,7 @@ while opcion != 0:
     elif opcionf_jugador ==3 and cpu1 == 2:
         print(f"Jugador: {opcion1_jugador}, CPU: {cpu_opcion1}. El ganador es el jugador.")
         victorias += 1
-    elif opcionf_jugador == 0 and opcion2 == 0:
+    elif opcionf_jugador == 0:
         opcion1 = 0
         print("Fin del juego")
         print(f"Victorias del jugador: {victorias}, empates: {empates}, victorias del CPU: {victorias_cpu}")
