@@ -64,6 +64,8 @@ while opcion != 0:
     else:
         opcionf_jugador = opcion2_jugador
 
+    print(opcionf_jugador)
+
     cpu_opcion = choice(cpu_opciones)
     print(f"Opcion final de la CPU es: {cpu_opcion}")
 
