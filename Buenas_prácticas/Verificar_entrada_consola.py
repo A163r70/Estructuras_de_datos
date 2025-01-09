@@ -12,13 +12,13 @@ print(cadena.isalpha())
 print(cadena.isalnum())"""
 
 #isnumeric sirve para positivos y el 0
-"""numero2 = input("Ingresa un número cualquiera: ")
+numero2 = input("Ingresa un número cualquiera: ")
 while not numero2.isnumeric():
     print("Opción no válida")
     numero2 = input("Intenta nuevamente: ")
 print()
 numero2 = input(numero2)
-print(f"El número {numero2} es de tipo: {type(numero2)}")#type para saber el tipo"""
+print(f"El número {numero2} es de tipo: {type(numero2)}")#type para saber el tipo
 
 def cadena_a_entero(cadenaa):#y a flotante
     no_puntos = cadenaa.count(".")
