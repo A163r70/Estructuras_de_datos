@@ -4,7 +4,6 @@ Fecha: 13 de enero de 2025
 Descripción: Conversiones.
 '''
 
-
 def menu()-> int:
     print("** Suma y Resta **")
     print("1.- Suma")
@@ -26,8 +25,11 @@ def resta(numero1, numero2: float)-> float:
     resta = numero1 - numero2
     return resta
 
-
-if __name__ == '__main__':
+def main()-> None:
+    """
+    Función que hace las conversiones.
+    :return:
+    """
     salir = 1
     while salir != 0:
         opcion = menu()
@@ -64,3 +66,7 @@ if __name__ == '__main__':
             salir = 0
         else:
             print("Valor no válido.")
+
+if __name__ == '__main__':
+    main()
+
