@@ -3,7 +3,7 @@ Nombre: Jesús Alberto Ramírez Salinas
 Fecha: 13 de enero de 2025
 Descripción: Conversiones.
 '''
-
+from Docstring import cadena_a_flotante
 
 def menu()-> int:
     print("** Suma y Resta **")
@@ -18,12 +18,16 @@ def menu()-> int:
     print()
     return opcion
 
-def suma(numero1, numero2: float)-> float:
-    suma = numero1 + numero2
+def suma(numero1, numero2: str)-> float:
+    numero_1 = cadena_a_flotante(numero1)
+    numero_2 = cadena_a_flotante(numero2)
+    suma = numero_1 + numero_2
     return suma
 
-def resta(numero1, numero2: float)-> float:
-    resta = numero1 - numero2
+def resta(numero1, numero2: str)-> float:
+    numero_1 = cadena_a_flotante(numero1)
+    numero_2 = cadena_a_flotante(numero2)
+    resta = numero_1 - numero_2
     return resta
 
 
@@ -33,29 +37,13 @@ if __name__ == '__main__':
         opcion = menu()
         if opcion == 1:
             numero1 = input("Ingrese el primer número a sumar: ")
-            while not numero1.isnumeric():
-                print("Opción no válida")
-                numero1 = input("Intenta nuevamente: ")
-            numero1 = float(numero1)
             numero2 = input("Ingrese el segundo número a sumar: ")
-            while not numero2.isnumeric():
-                print("Opción no válida")
-                numero2 = input("Intenta nuevamente: ")
-            numero2 = float(numero2)
             resultado = suma(numero1, numero2)
             print(f"El resultado de la suma es: {resultado}")
             print()
         elif opcion == 2:
             numero1 = input("Ingrese el primer número a restar: ")
-            while not numero1.isnumeric():
-                print("Opción no válida")
-                numero1 = input("Intenta nuevamente: ")
-            numero1 = float(numero1)
             numero2 = input("Ingrese el segundo número a restar: ")
-            while not numero2.isnumeric():
-                print("Opción no válida")
-                numero2 = input("Intenta nuevamente: ")
-            numero2 = float(numero2)
             resultado = resta(numero1, numero2)
             print(f"El resultado de la resta es: {resultado}")
             print()
