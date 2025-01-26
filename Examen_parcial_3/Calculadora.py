@@ -32,14 +32,14 @@ if __name__ == '__main__':
 
             numero1 = input("Ingrese el primer número a sumar: ")
             numero1 = cadena_a_flotante(numero1)
-            while numero1 is None:  # Validar con la función `cadena_a_flotante`
+            while numero1 is None:
                 print("Valor no válido.")
                 numero1 = input("Ingrese un número válido: ")
                 numero1 = cadena_a_flotante(numero1)
 
             numero2 = input("Ingrese el segundo número a sumar: ")
             numero2 = cadena_a_flotante(numero2)
-            while numero2 is None:  # Validar con la función `cadena_a_flotante`
+            while numero2 is None:
                 print("Valor no válido.")
                 numero2 = input("Ingrese un número válido: ")
                 numero2 = cadena_a_flotante(numero2)
@@ -51,14 +51,14 @@ if __name__ == '__main__':
         elif opcion == 2:
             numero1 = input("Ingrese el primer número a multiplicar: ")
             numero1 = cadena_a_flotante(numero1)
-            while numero1 is None:  # Validar con la función `cadena_a_flotante`
+            while numero1 is None:
                 print("Valor no válido.")
                 numero1 = input("Ingrese un número válido: ")
                 numero1 = cadena_a_flotante(numero1)
 
             numero2 = input("Ingrese el segundo número a multiplicar: ")
             numero2 = cadena_a_flotante(numero2)
-            while numero2 is None:  # Validar con la función `cadena_a_flotante`
+            while numero2 is None:
                 print("Valor no válido.")
                 numero2 = input("Ingrese un número válido: ")
                 numero2 = cadena_a_flotante(numero2)
