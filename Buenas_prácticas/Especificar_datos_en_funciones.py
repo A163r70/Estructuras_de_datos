@@ -33,28 +33,27 @@ def cadena_a_flotante(cadena: str)-> float | None:
         return float(cadena)
     else:
         return None
-
-salir = 1
-while salir != 0:
-    opcion = menu()
-    if opcion == 1:
-        num_cadena = input("Ingrese el número a convertir: ")
-        numero = cadena_a_entero(num_cadena)
-        while numero is None:
-            num_cadena = input("Opción no válida. Intente nuevamente: ")
+if __name__ == '__main__':
+    salir = 1
+    while salir != 0:
+        opcion = menu()
+        if opcion == 1:
+            num_cadena = input("Ingrese el número a convertir: ")
             numero = cadena_a_entero(num_cadena)
-
-        print(f"El número {numero} es de tipo {type(numero)}")
-        print()
-    elif opcion == 2:
-        num_cadena = input("Ingresa el número a convertir: ")
-        numero = cadena_a_flotante(num_cadena)
-        while numero is None:
-            num_cadena = input("Opción no válida. Intente nuevamente: ")
+            while numero is None:
+                num_cadena = input("Opción no válida. Intente nuevamente: ")
+                numero = cadena_a_entero(num_cadena)
+            print(f"El número {numero} es de tipo {type(numero)}")
+            print()
+        elif opcion == 2:
+            num_cadena = input("Ingresa el número a convertir: ")
             numero = cadena_a_flotante(num_cadena)
-        print(f"El número {numero} es de tipo {type(numero)}")
-        print()
-    elif opcion == 0:
-        salir = 0
-    else:
-        print("Opción no válida.")
+            while numero is None:
+                num_cadena = input("Opción no válida. Intente nuevamente: ")
+                numero = cadena_a_flotante(num_cadena)
+            print(f"El número {numero} es de tipo {type(numero)}")
+            print()
+        elif opcion == 0:
+            salir = 0
+        else:
+            print("Opción no válida.")
