@@ -4,8 +4,17 @@ Fecha: 24 de enero de 2025
 Descripción: Clculadora de suma y multiplicación.
 """
 from Buenas_prácticas.Especificar_datos_en_funciones import cadena_a_flotante
+from time import sleep
+from termcolor import colored
+from colorama import init
+
+init()
 
 def menu()->int:
+    """
+    Función que nos muestra el menú para escojer que opción hacer.
+    :return:
+    """
     print("*** Calculadora ***")
     print("1.- Suma.")
     print("2.- Multiplicación.")
@@ -19,12 +28,31 @@ def menu()->int:
     return opcion
 
 def suma(numero1: float, numero2:float)->float:
+    """
+    Función suma los números.
+    :param numero1: Primer número a sumar.
+    :param numero2: Segundo número a sumar.
+    :return:
+    """
     return numero1 + numero2
 
 def multiplicacion(numero1:float, numero2:float)->float:
+    """
+    Función que multiplica los números.
+    :param numero1: Primer número a multiplicar.
+    :param numero2: Segundo número a multiplicar.
+    :return:
+    """
     return numero1 * numero2
 
 if __name__ == '__main__':
+    texto = "¿Qué operación harás hoy?."
+    print()
+    for letra in texto:
+        print(colored(letra, 'green', attrs=['bold']), end=" ")
+        sleep(.1)
+    print()
+
     salida = 1
     while salida != 0:
         opcion = menu()

@@ -3,18 +3,24 @@ Nombre: Jesús Alberto Ramírez Salinas
 Fecha: 24 de enero de 2025
 Descripción: Programa que calcula el promedio de un alumno.
 """
-from dataclasses import replace
 from Buenas_prácticas.Especificar_datos_en_funciones import cadena_a_flotante
+from time import sleep
+from termcolor import colored
+from colorama import init
 
-calificaciones = {'Nombre': " ", 'Materias':{'Estructura de Datos': 0, 'Derecho y Legislación': 0, 'Electronica II': 0,
-                    'Contabilidad': 0, 'Algebra': 0, 'Ingles': 0}}
+init()
+
 
 def datos(calificaciones)->None:
-    nombre = input("Ingresa tu nombre: ")
-    nombre = nombre.replace(" ", "_")
-    while not nombre.isalpha():
+    """
+    Función que nos permite calcular el promedio de un parcial de un alumno.
+    :param calificaciones:
+    :return:
+    """
+    nombre = input("Ingresa tu nombre: ").strip()
+    while not nombre.replace(" ", "").isalpha():
         print("Valor no válido.")
-        nombre = input("Intenta de nuevo: ")
+        nombre = input("Intenta de nuevo: ").strip()
     calificaciones['Nombre'] = nombre
     for materia in calificaciones['Materias']:
         while True:
@@ -52,4 +58,14 @@ def promedio(calificaciones)->None:
 
 
 if __name__ == '__main__':
+    texto = "¿Quiéres conocer tu promedio?."
+    print()
+    for letra in texto:
+        print(colored(letra, 'green', attrs=['bold']), end=" ")
+        sleep(.1)
+    print()
+
+    calificaciones = {'Nombre': " ",
+                      'Materias': {'Estructura de Datos': 0, 'Derecho y Legislación': 0, 'Electronica II': 0,
+                                   'Contabilidad': 0, 'Algebra': 0, 'Ingles': 0}}
     datos(calificaciones)

@@ -1,8 +1,11 @@
 from time import sleep
+from termcolor import colored
+from colorama import init
 
-texto = "Addi es una perra, con todo respeto xd."
+init()
+
+texto = "Esto es un ejemplo del letrero con colores en verde."
 
 for letra in texto:
-    print(letra, end=" ")
+    print(colored(letra, 'green', attrs=['blink', 'bold', 'underline']),end=" ")
     sleep(.5)
-
