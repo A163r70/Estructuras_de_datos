@@ -5,6 +5,11 @@ Descripción: Primer ejercicio de argumentos variables.
 """
 
 def cadena_a_entero(cadena: str)-> int | None:
+    """
+    Función que convierte una cadena a entero.
+    :param cadena: Cadena a convertir en entero.
+    :return: La cadena convertida.
+    """
     no_guiones = cadena.count("-")
     revisar_cadena = cadena.lstrip("-")
     if revisar_cadena.isnumeric() and no_guiones in (0,1) :
@@ -13,6 +18,11 @@ def cadena_a_entero(cadena: str)-> int | None:
         return None
 
 def sumar_numeros(* vargs)->int:
+    """
+    Función que suma los números pares.
+    :param vargs: La cadena de números variables a sumar.
+    :return: La suma de los números.
+    """
     suma = 0
     if len(vargs) != 0:
         for numero in vargs:
@@ -24,6 +34,10 @@ def sumar_numeros(* vargs)->int:
     return suma
 
 def main()->None:
+    """
+    Función principal.
+    :return:
+    """
     numeros_sumar = []
     cantidad_numeros = input(f"Ingresa el número [{len(numeros_sumar)+1}] o presiona enter para sumar: ")
     while bool(cantidad_numeros):

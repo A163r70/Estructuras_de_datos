@@ -5,6 +5,11 @@ Descripción: Segundo ejercicio de argumentos variables.
 """
 
 def cadena_a_flotante(cadena: str)-> float | None:
+    """
+    Función que convierte una cadena a flotante.
+    :param cadena: La cadena a convertir.
+    :return:
+    """
     no_puntos = cadena.count(".")
     no_guiones = cadena.count("-")
     revisar_cadena = cadena.lstrip("-").replace(".", "")
@@ -14,6 +19,11 @@ def cadena_a_flotante(cadena: str)-> float | None:
         return None
 
 def maximo_minimo(*vargs):
+    """
+    Función que determina el número maxímo y el mínimo.
+    :param vargs: Lista de números variables.
+    :return: El número máximo y el mínimo.
+    """
     maximo = vargs[0]
     minimo = vargs[0]
     if len(vargs) != 0:
@@ -27,6 +37,10 @@ def maximo_minimo(*vargs):
 
 
 def main()->None:
+    """
+    Función principal.
+    :return:
+    """
     maximominimo = []
     numeros = input(f"Ingresa el número [{len(maximominimo)+1}] o presiona enter para calcular: ")
     while bool(numeros):
