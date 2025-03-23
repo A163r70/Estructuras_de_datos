@@ -4,7 +4,7 @@ Fecha: 24 de enero de 2025
 Descripción: Menú de los juegos del examen parcial 3.
 """
 from Ahorcado import ahorcado
-from menu_gato import menu_gato
+from menu_gato import menu_gato,unovscpu,unovsuno
 from time import sleep
 from termcolor import colored
 from colorama import init
@@ -45,7 +45,16 @@ if __name__ == '__main__':
             ahorcado(palabras)
             print()
         elif opciones == 2:
-            menu_gato()
+            while True:
+                opcion_gato = menu_gato()
+                if opcion_gato == 1:
+                    unovsuno(tablero)
+                elif opcion_gato == 2:
+                    unovscpu(tablero)
+                elif opcion_gato == 0:
+                    break
+                else:
+                    print("Opción no válida. Inténtalo de nuevo.")
             print()
         elif opciones == 3:
             print("En proceso, aún no queda.")

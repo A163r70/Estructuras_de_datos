@@ -4,22 +4,6 @@ Fecha: 24 de enero de 2025
 Descripción: Juego del gato.
 """
 import random
-from time import sleep
-from termcolor import colored
-from colorama import init
-from menu_gato import menu_gato
-
-init()
-
-
-
-def mostrar_letrero()->None:
-    texto = "Bienvenido al juego del Gato, ¿crees poder ganar?."
-    print()
-    for letra in texto:
-        print(colored(letra, 'green', attrs=['blink', 'bold', 'underline']), end=" ")
-        sleep(.1)
-    print()
 
 def imprimir_tablero(tablero)->None:
     """
@@ -191,14 +175,5 @@ def unovsuno(tablero)->None:
 
 if __name__ == '__main__':
     tablero = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
-    while True:
-        opcion = menu_gato()
-        if opcion == 1:
-            unovsuno(tablero)
-        elif opcion == 2:
-            unovscpu(tablero)
-        elif opcion == 0:
-            print("Vuelve pronto.")
-            break
-        else:
-            print("Valor no válido.")
+    unovscpu(tablero)
+    unovscpu(tablero)
